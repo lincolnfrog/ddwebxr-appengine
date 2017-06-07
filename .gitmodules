@@ -1,0 +1,4 @@
+[submodule "chromium-webar"]
+	path = chromium-webar
+	url = git@github.com:googlevr/chromium-webar.git
+	branch = master

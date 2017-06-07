@@ -12,6 +12,21 @@
 # limitations under the License.
 #
 # [START runtime]
-runtime: nodejs
-env: flex
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.*)$
+  static_files: \1
+  upload: .*$
+
+skip_files:
+- README.md
+- .DS_Store
+- .git
+- .gitignore
+- deploy.sh
+- ^chromium-webar/(?!examples).*$
+
 # [END runtime]
