@@ -20,6 +20,7 @@ handlers:
 - url: /(.*)$
   static_files: \1
   upload: .*$
+  login: required
 
 skip_files:
 - README.md
